@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Student Status</title>
+
+    <style>
+        body {
+            background-color: #292929;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #292929;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #0066ff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #0052cc;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var container = document.querySelector(".container");
+            container.style.display = "block";
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Are you a student at IIIT?</h1>
+        <div class="button-container">
+            <form action="studentlogin.html" method="post">
+                <button type="submit" name="yes">Yes</button>
+            </form>
+            <form action="index.html" method="post">
+                <button type="submit" name="no">No</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

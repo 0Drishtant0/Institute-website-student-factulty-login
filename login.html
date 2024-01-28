@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IIITN Login</title>
+  <style>
+    body {
+      background-color: #222222;
+      font-family: Arial, sans-serif;
+    }
+
+    .floating-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333333;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="floating-box">
+    <h2>Are you a student at IIIT Nagpur?</h2>
+    <div class="button-container">
+      <form action="studentlogin.php" method="post">
+        <button type="submit" name="yes">Yes</button>
+    </form>
+    <form action="index.php" method="post">
+        <button type="submit" name="no">No</button>
+    </div>
+  </div>
+</body>
+</html>
